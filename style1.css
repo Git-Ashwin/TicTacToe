@@ -1,0 +1,246 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Protest+Revolution&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Honk&family=Protest+Strike&family=Sixtyfour&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes displaceContent {
+    from { transform : translateX(-15em) }
+    to   { transform : translateX(35em) }
+}
+
+@media screen and (max-width : 850px){
+    .gameContainer{
+        flex-wrap : wrap;
+        margin-top : 20%; 
+    }
+
+    .gameinfo{
+        margin-top: 34px;
+        font-size: 0.7rem;
+    }
+
+    .container{
+        top: 35px;
+        padding: none;
+    }
+
+    .heading{
+        text-align: left;  
+        margin-top: 20%;
+        z-index:33;
+        font-size: 1rem;
+        
+    }
+
+}
+
+nav{
+    position: absolute;
+    z-index:9999;
+    margin: auto;
+    display: flex;
+    color: aliceblue;
+    align-items: center;
+    height: 70px;
+    font-size: 2.5rem;
+    padding: 0 10px;
+    text-decoration: none;
+    font-family: 'Protest Strike', sans-serif;   
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+.mountain{
+    z-index:9999;
+    position: absolute;
+    font-family: 'Protest Strike', sans-serif;  
+    font-size: 1.5rem; 
+    border: 1px solid orange;
+    box-shadow: 2px 2px 4px rgb(253, 253, 253);
+    padding: 5px;
+    color: aquamarine;
+    text-decoration: none; 
+}
+
+.bgimage{
+    
+    z-index: 1;
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+}
+
+main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.heading{
+    position: absolute;
+    top: 4%;
+    left: 30%;
+    z-index: 5;
+    font-family: 'Honk', system-ui;
+    font-size: 4rem;
+    text-shadow: 2px 2px 4px rgb(253, 253, 253);
+}
+
+.img-cloud{
+    display: none;
+    position: absolute;
+    width: 1400px;
+    opacity: 75%;
+
+    z-index: 6;
+    top: 25%;
+    left: 30%;
+    animation-name: displaceContent;
+    animation-duration: 40s;
+    animation-direction: alternate;
+    animation-iteration-count : infinite;
+}
+
+.img-cloud1{
+    display: none;
+    position: absolute;
+    width: 1850px;
+    z-index: 7;
+    top: 35%;
+    left: 0%;
+    animation-name: displaceContent;
+    animation-duration: 60s;
+    animation-direction: alternate;
+    animation-iteration-count : infinite;
+}
+
+.img-cloud2{
+    position: absolute;
+    width: 1000px;
+    z-index: 7;
+    top: 32%;
+    left: 0;
+    animation-name: displaceContent;
+    animation-duration: 32s;
+    animation-direction: alternate;
+    animation-iteration-count : infinite;
+}
+
+.img-cloud3{
+    position: absolute;
+    width: 900px;
+    z-index: 7;
+    top: 5%;
+    left: 15%;
+    animation-name: displaceContent;
+    animation-duration: 20s;
+    animation-direction: alternate;
+    animation-iteration-count : infinite;
+}
+
+.img-cloud4{
+    position: absolute;
+    width: 500px;
+    z-index: 7;
+    top: 15%;
+    left: 50%;
+    animation-name: displaceContent;
+    animation-duration: 32s;
+    animation-direction: alternate;
+    animation-iteration-count : infinite;
+}
+
+.gameContainer{
+    position:absolute;
+    z-index: 44;
+    display: flex;
+    top: 52%;
+    left: 50%;
+    transform: translate(-40%, -50%);
+
+}
+
+.container{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 10vw);
+    font-family : 'Permanent Marker' ;
+    font-size: 8vw;
+    text-align: center;
+    justify-content: center;
+    color: rgb(53, 60, 137);
+    
+}
+
+.box{
+    border : 3px solid rgb(117, 117, 117);
+    
+}
+
+.box:hover{
+    opacity: 10%;
+    
+    background-color: rgb(116, 199, 247);
+    cursor: pointer;
+    color:rgb(20, 10, 1) !important;
+}
+
+.info{
+    margin-top: 20px;
+    font-size: 43px;
+}
+
+.gameinfo{
+    padding : 5rem 60px;
+    font-family: 'Protest Strike', sans-serif;   
+    color : rgb(238, 38, 38);
+    text-shadow: 2px 2px 4px rgb(246, 195, 67);
+
+}
+
+.imgbox img{
+    width: 0 ;
+    transition: width 1s ease-in-out ;
+}
+
+
+.draw img{
+    width: 0 ;
+    transition: width 1s ease-in-out ;
+}
+
+
+#reset{
+    margin: 0 23px;
+    padding : 10px 24px;
+    background: rgb(255, 186, 95);
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Honk', system-ui;
+    font-size: large;
+}
+
+
+.br-0{
+    border-right: 0;
+}
+
+.bl-0{
+    border-left: 0;
+}
+
+.bt-0{
+    border-top: 0;
+}
+
+.bb-0{
+    border-bottom: 0;
+}

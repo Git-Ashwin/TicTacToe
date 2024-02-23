@@ -1,0 +1,178 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Protest+Revolution&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+@media screen and (max-width : 950px){
+    .gameContainer{
+        flex-wrap : wrap;
+        margin-top : 40%; 
+    }
+
+    .gameinfo{
+        margin-top: 34px;
+        font-size: 0.7rem;
+    }
+
+    .container{
+        top: 35px;
+    }
+
+    .heading{
+        text-align: left;  
+        z-index:33;
+        font-size: 10px;
+    }
+}
+
+nav{
+    position: absolute;
+    z-index:9999;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    height: 70px;
+    font-size: 2.5rem;
+    padding: 0 10px;
+    text-decoration: none;
+    font-family: 'Protest Revolution', sans-serif;    
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+.sky,.mountain{
+    display: inline;
+    position: absolute;
+    text-decoration: none; 
+}
+
+main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.heading{
+    position: absolute;
+    top: 4%;
+    left: 30%;
+    font-family:'Permanent Marker';
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgb(253, 253, 253);
+}
+
+.bgimage{
+    z-index: 1;
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+}
+
+.img-mountain1{
+    
+    position: absolute;
+    z-index: 2;
+    width: 2200px;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.img-mountain2{
+    position: absolute;
+    z-index: 3;
+    width: 2000px;
+    top: 90%;
+    left: 50%;
+    height: 100vh;
+    width: 100vw;
+    object-fit: fill;
+    transform: translate(-50%, -50%);
+}
+
+.gameContainer{
+    position:absolute;
+    z-index: 4;
+    display: flex;
+    top: 45%;
+    left: 50%;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+
+}
+
+.container{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 10vw);
+    font-family : 'Permanent Marker' ;
+    font-size: 8vw;
+    text-align: center;
+    justify-content: center;
+    color: beige;
+    
+}
+
+.box{
+    border : 3px solid rgb(238, 137, 74);
+
+}
+
+.box:hover{
+    opacity: 10%;
+    background-color: rgb(243, 160, 78);
+    cursor: pointer;
+    color:bisque;
+}
+
+.info{
+    margin-top: 20px;
+    font-size: 43px;
+}
+
+.gameinfo{
+    padding : 5rem 60px;
+    font-family : 'Permanent Marker' ;
+    color : rgb(255, 196, 93);
+}
+
+
+.imgbox img{
+    width: 0 ;
+    transition: width 1s ease-in-out ;
+}
+
+#reset{
+    margin: 0 23px;
+    padding : 6px 14px;
+    background: rgb(249, 223, 227);
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Permanent Marker' ;
+}
+
+
+.br-0{
+    border-right: 0;
+}
+
+.bl-0{
+    border-left: 0;
+}
+
+.bt-0{
+    border-top: 0;
+}
+
+.bb-0{
+    border-bottom: 0;
+}
